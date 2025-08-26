@@ -75,6 +75,10 @@ include('functions/common_function.php');
       <p class="text-center">Communications is at the heart of e-commerce and community</p>
     </div>
 
+      <!-- calling cart function -->
+    <?php
+    cart();
+    ?>
     
     <!-- fourth child -->
      <div class="row">
@@ -83,38 +87,10 @@ include('functions/common_function.php');
             <!-- products -->
             <div class="row">
 
-            <div class="col-md-4">
-                <!-- card -->
-                  <div class='card'>
-                                    <img src='images/15.png' class='card-img-top' alt='...'>
-                                      <div class='card-body'>
-                                        <h5 class='card-title'>$product_title</h5>
-                                        <p class='card-text'>$product_description.</p>
-                                        <p class='card-text'>Price: $product_price. 00</p>
-                                        <a href='#' class='btn btn-info'>Add To Card</a>
-                                        <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View More ..</a>
-                                      </div>
-                                  </div>
-             </div>
-
-            <div class="col-md-8">
-                <!-- releted images -->
-                 <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="text-center text-info mb-5">Related Products</h4>
-                    </div>
-                    <div class="col-md-6">
-                        <img src='images/16.png' class='card-img-top' alt='...'>
-                    </div>
-                    <div class="col-md-6">
-                        <img src='images/17.png' class='card-img-top' alt='...'>
-                    </div>
-                 </div>
-            </div>
-
               <!-- fetching products -->
                <?php 
               //  calling funtions
+                  view_details();
                   get_unique_categories();
                   get_unique_brands();
                ?>

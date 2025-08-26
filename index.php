@@ -57,6 +57,11 @@ include('functions/common_function.php');
   </div>
 </nav>
 
+    <!-- calling cart function -->
+    <?php
+    cart();
+    ?>
+
     <!-- Second child -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
       <ul class="navbar-nav me-auto">
@@ -88,6 +93,8 @@ include('functions/common_function.php');
                   getproducts();
                   get_unique_categories();
                   get_unique_brands();
+                  //  $ip = getIPAddress();  
+                  //  echo 'User Real IP Address - '.$ip;
                ?>
 
                 <!-- row end -->

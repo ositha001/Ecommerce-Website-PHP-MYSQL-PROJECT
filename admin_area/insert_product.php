@@ -16,8 +16,8 @@ if(isset($_POST['insert_product'])){
 
     // accessing image tmp name
     $tmp_image1 = $_FILES['product_image1']['tmp_name'];
-    $tmp_image2 = $_FILES['product_image1']['tmp_name'];
-    $tmp_image3 = $_FILES['product_image1']['tmp_name'];
+    $tmp_image2 = $_FILES['product_image2']['tmp_name'];
+    $tmp_image3 = $_FILES['product_image3']['tmp_name'];
 
     // checking empty condition
 
@@ -117,14 +117,14 @@ if(isset($_POST['insert_product'])){
                 <label for="keywords" class="form-label">Product Image 1</label>
                 <input type="file" name="product_image1" id="product_image1" class="form-control" required="required">
             </div>
+
                <!-- Image 2 -->
-            <div class="form-outline mb-4 w-50 m-auto">
+            <div class="form-outline mb-5 w-50 m-auto">
                 <label for="keywords" class="form-label">Product Image 2</label>
                 <input type="file" name="product_image2" id="product_image2" class="form-control" required="required">
-            </div>
-               <!-- Image 3 -->
-            <div class="form-outline mb-4 w-50 m-auto">
-                <label for="keywords" class="form-label">Product Image 1</label>
+            </div>   <!-- Image 3 -->
+            <div class="form-outline mb-5 w-50 m-auto">
+                <label for="keywords" class="form-label">Product Image 3</label>
                 <input type="file" name="product_image3" id="product_image3" class="form-control" required="required">
             </div>
                <!-- product price -->

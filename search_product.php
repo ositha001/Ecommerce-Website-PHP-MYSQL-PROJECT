@@ -69,6 +69,11 @@ include('functions/common_function.php');
       </ul>
     </nav>
 
+      <!-- calling cart function -->
+    <?php
+    cart();
+    ?>
+
     <!-- Third child -->
     <div class="bg-light">
       <h3 class="text-center">Hidden Store</h3>
