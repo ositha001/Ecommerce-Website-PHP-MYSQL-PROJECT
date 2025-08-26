@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 3%;
+    height: 6%;
+    margin-right: 20px;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.col-md-4{
+   margin-bottom: 5px;
+}
+.card{
+    margin-right: 10px;
+}
